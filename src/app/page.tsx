@@ -1,6 +1,5 @@
 import apolloClient from "./lib/apollo/graphql/apollo.config";
 import { TEST } from "./lib/apollo/graphql/queries/test";
-import styles from "./page.module.css";
 
 async function getData() {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts");
@@ -27,8 +26,8 @@ export default async function Home() {
   console.log(testQueryData.demoModels);
 
   return (
-    <main className={styles.main}>
-      <h1>TEST</h1>
+    <main className="container mx-auto px-4">
+      <h1 className="text-sky-400">TEST</h1>
 
       <div>
         {testQueryData.demoModels.map((item: any, index: number) => (
