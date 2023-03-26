@@ -16,7 +16,7 @@ export default function NavLink({
 	return (
 		<Link
 			href={route}
-			className={`font-medium hover:text-orange-700 transition-colors ${customClassName}`}
+			className={`font-medium hover:text-emerald-700 transition-colors w-fit ${customClassName}`}
 			onClick={customAction}
 		>
 			{displayText}
