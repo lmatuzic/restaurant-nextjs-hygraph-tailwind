@@ -5,7 +5,7 @@ import NavLink from './NavLink';
 
 export default function DesktopNavigation() {
 	return (
-		<nav className='flex justify-between items-center py-8'>
+		<nav className='hidden md:flex justify-between items-center py-8 '>
 			<NavLink route={HOME_PAGE} displayText='Logo' />
 
 			<ul className='flex items-center'>

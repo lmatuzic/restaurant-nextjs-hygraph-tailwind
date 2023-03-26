@@ -11,7 +11,6 @@ async function getQueryData() {
 
 export default async function Home() {
 	const testQueryData = await getQueryData();
-
 	console.log(testQueryData.demoModels);
 
 	return (
